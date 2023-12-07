@@ -2,7 +2,7 @@
 layout: post
 title:  "Culturally Sensitive Human-Robot Interaction: A Case Study with the Pepper Humanoid Robot"
 date:   2023-09-20 22:21:59 +00:00
-image: /images/pepper.png
+image: /images/pepper-demo-3-removebg-preview.png
 categories: research
 author: "Pamely Zantou"
 authors: "<strong>Pamely Zantou</strong>, David Vernon"
