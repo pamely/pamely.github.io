@@ -1,15 +1,12 @@
 ---
 layout: post
-title:  "Discovering Multiple Algorithm Configurations"
+title:  "An Intelligent based System for Blind People Monitoring in a Smart Home"
 date:   2023-03-14 22:21:59 +00:00
-image: /images/modecfg.png
+image: /images/teknix.png
 categories: research
-author: "Leo Keselman"
-authors: "<strong>Leonid Keselman</strong>, Martial Hebert"
-venue: "International Conference on Robotics and Automation"
-arxiv: https://arxiv.org/abs/2303.07434
-code: https://github.com/leonidk/modecfg
-website: https://leonidk.github.io/modecfg
-youtube: https://www.youtube.com/watch?v=r2426BR4r8o
+author: "Pamely Zantou"
+authors: "<strong>Pamely Zantou</strong>, Ange Mikaël Mousse, Bethel Atohoun"
+venue: "Computer Science & Information Technology (CS & IT)"
+website: https://leonidk.github.io/modecfg](https://aircconline.com/csit/papers/vol10/csit101910.pdf)
 ---
-We show the benefits of discovering an ensemble of configurations for a given algorithm during the course of optimization. Results on stereo, planning and visual odometry. 
+Visually impaired individuals require assistance for safe travel. Numerous travel aids, including the cane, universally recognized as a symbol of visual deficiency, have been developed. In this project, we create an electronic white cane utilizing sensor technology. This cane identifies obstacles within a 2-meter range on the ground or in height, delivering vocal instructions through a Bluetooth headset. Additionally, we have developed a real-time mobile application for tracking visually impaired individuals and a web application to manage access to the mobile app. Ultrasound, IR sensors, and a Raspberry Pi are employed for data processing.
