@@ -1,0 +1,13 @@
+---
+layout: post
+title:  "Culturally Sensitive Human-Robot Interaction: A Case Study with the Pepper Humanoid Robot"
+date:   2023-09-20 22:21:59 +00:00
+image: /images/pepper.png
+categories: research
+author: "Pamely Zantou"
+authors: "<strong>Pamely Zantou</strong>, David Vernon"
+venue: "IEEE Africon"
+website: http://www.vernon.eu/publications/2023_Zantou_Vernon_Africon.pdf
+---
+Socio-cultural factors play a significant role in achieving the trust and acceptance required to realize the poten-
+tial of artifiical intelligence and robotics. Consequently, culturally sensitive human-robot interaction is essential for the adoption of social robots in Africa. Three elements must be present to achieve this: cultural knowledge representation, culturally sensitive planning and action execution, and culturally aware multimodal human-robot interaction. This paper presents a system architecture for culturally sensitive human-robot interaction in Africa that addresses these three elements, an initial set of software interaction primitives, and a practical demonstration of culturally sensitive human-robot interaction using the Pepper humanoid robot. 

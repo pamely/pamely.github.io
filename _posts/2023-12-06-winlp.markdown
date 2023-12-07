@@ -1,0 +1,12 @@
+---
+layout: post
+title:  "FonMTL: Towards Multitask Learning for the Fon Language"
+date:   2023-12-06 22:21:59 +00:00
+image: /images/multifon.png
+categories: research
+authors: "Bonaventure Dossou, Iffanice Houndayi, <strong>Pamely Zantou</strong>, Gilles Hacheme"
+venue: "arXiv"
+arXiv: arXiv:2308.14280
+---
+We explore the effectiveness of multitask learning in Natural Language Processing for the Fon language. We use a hard parameter-sharing approach. The experiments include two tasks: Named Entity Recognition (NER) and Part of Speech Tagging (POS) for Fon. We leverage two language model heads as encoders to build shared representations for the inputs, and we use linear layer blocks for classification relative to each task. Moreover, we leveraged the advantages of cross-linguality and demonstrated how it can be useful in low-resource contexts. Finally, we used two loss combination strategies on the cross entropy to evaluate the performance of the model: equally weighted sum and unweighted sum. 
+
