@@ -1,0 +1,11 @@
+---
+layout: post
+title:  "Culturally-Sensitive Human-Robot Interaction: A Case Study with the Pepper Humanoid Robot"
+date:   2023-05-01 10:30:59 +00:00
+image: /images/final_report.png
+categories: Report
+author: "Pamely Zantou"
+report: https://drive.google.com/file/d/1GxYGRhDJ4phGILtn9ui8kvpRrUDEc1sS/view?usp=sharing
+---
+18-980: M.S. Graduate Project report defended as part of the Master of Science in Electrical and Computer Engineering,
+Advanced Studies Program (MS-AD in ECE). 
