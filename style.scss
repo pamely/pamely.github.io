@@ -33,7 +33,6 @@ a {
   font-size: 18px;
   font-display: auto;
   font-weight: 400;
-  text-align: justify;
 }
 
 strong {
@@ -78,14 +77,14 @@ h1 {
 }
 
 .one {
-  width: 160px;
-  height: 160px;
+  width: 180px;
+  height: 180px;
   position: relative;
 }
 
 .two {
-  width: 160px;
-  height: 160px;
+  width: 180px;
+  height: 180px;
   position: absolute;
   transition: opacity .2s ease-in-out;
   -moz-transition: opacity .2s ease-in-out;
