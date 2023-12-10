@@ -9,4 +9,4 @@ authors: "<strong>Pamely Zantou</strong>, Ange Mikaël Mousse, Bethel Atohoun"
 venue: "Computer Science & Information Technology (CS & IT)"
 website: https://aircconline.com/csit/papers/vol10/csit101910.pdf
 ---
-Visually impaired individuals require assistance for safe travel. Numerous travel aids, including the cane, universally recognized as a symbol of visual deficiency, have been developed. In this project, we create an electronic white cane utilizing sensor technology. This cane identifies obstacles within a 2-meter range on the ground or in height, delivering vocal instructions through a Bluetooth headset. Additionally, we have developed a real-time mobile application for tracking visually impaired individuals and a web application to manage access to the mobile app. Ultrasound, IR sensors, and a Raspberry Pi are employed for data processing.
+We designed an electronic white cane using sensor technology to aid visually impaired individuals. The cane identifies obstacles within a 2-meter range and provides vocal instructions through a Bluetooth headset and a mobile application.
