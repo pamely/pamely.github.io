@@ -30,9 +30,10 @@ tr,
 p,
 a {
   font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   font-display: auto;
   font-weight: 400;
+  text-align: justify;
 }
 
 strong {
@@ -77,14 +78,14 @@ h1 {
 }
 
 .one {
-  width: 180px;
-  height: 180px;
+  width: 160px;
+  height: 160px;
   position: relative;
 }
 
 .two {
-  width: 180px;
-  height: 180px;
+  width: 160px;
+  height: 160px;
   position: absolute;
   transition: opacity .2s ease-in-out;
   -moz-transition: opacity .2s ease-in-out;
