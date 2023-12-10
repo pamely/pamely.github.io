@@ -135,7 +135,7 @@
 
           {% for post in site.posts %}
           {% for cat in post.categories %}
-          {% if cat != 'publications' %}
+          {% if cat == 'publications' or cat == 'Poster' or cat == 'Poster'  or cat == 'Paper' or cat == 'Workshop' %}
           <tr>
             <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px" class="zoom-container">
               <img src="/tn{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
@@ -202,7 +202,7 @@
 
           {% for post in site.posts %}
           {% for cat in post.categories %}
-          {% if cat == 'publications' %}
+          {% if cat == 'projects' %}
           <tr>
             <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
               <img src="/tn{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
