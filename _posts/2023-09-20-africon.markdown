@@ -8,8 +8,7 @@ author: "<strong>Pamely Zantou</strong>, David Vernon"
 venue: "IEEE Africon"
 website: http://www.vernon.eu/publications/2023_Zantou_Vernon_Africon.pdf
 ---
-Socio-cultural factors play a significant role in achieving the trust and acceptance required to realize the poten-
-tial of artifiical intelligence and robotics. Consequently, culturally sensitive human-robot interaction is essential for the adoption of social robots in Africa. This paper presents a system arhitecture for cultural-sensitive HRI in Afric using the Pepper humanoid robot.
+Socio-cultural factors play a significant role in achieving the trust and acceptance required to realize the potential of artifiical intelligence and robotics. Consequently, culturally sensitive human-robot interaction is essential for the adoption of social robots in Africa. This paper presents a system arhitecture for cultural-sensitive HRI in Afric using the Pepper humanoid robot.
 
 
 
