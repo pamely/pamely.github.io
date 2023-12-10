@@ -5,6 +5,6 @@ date:   2022-05-01 10:30:59 +00:00
 image: /images/dlproject.png
 categories: Report
 author: "Gladys INABEZA, Jacob RAST, Peter SAUER, Pamely Zantou"
-report: https://drive.google.com/file/d/1gSqBXHJYp2xACUCb33f0mBuTHoTZvnIt/view?usp=sharing
+website: https://drive.google.com/file/d/1gSqBXHJYp2xACUCb33f0mBuTHoTZvnIt/view?usp=sharing
 ---
 11-785 Introduction to Deep Learning project report. In this report we explored how deep learning methods can help diagnosed effectively birth asphyxia. We implemented CNN, Bi-LSTM and an attention based pipelines to perform experiments. 
