@@ -3,10 +3,10 @@ layout: post
 title:  "Inclusion Drives Sustainable Development: The Case of Social Robotics for Africas"
 date:   2023-08-15 22:21:59 +00:00
 image: /images/sdgs.webp
-categories: "Poster presentation"
-author: "Pamely Zantou"
-authors: "<strong>Pamely Zantou</strong>, David Vernon"
-venue: "ACM SIGCAS/SIGCHI Conference on Computing and Sustainable Societies - COMPASS"
+categories: Poster
+author: Pamely Zantou
+authors: Pamely Zantou, David Vernon
+venue: ACM SIGCAS/SIGCHI Conference on Computing and Sustainable Societies - COMPASS
 website: http://www.vernon.eu/publications/2023_Zantou_Vernon_COMPASS_Poster.pdf
 ---
 The achievement of sustainable development goals requires collaboration and inclusivity among stakeholders, with artificial intelligence (AI) and robotics considered powerful tools for leveraging solutions. In this poster, we argue that inclusivity cannot be achieved without cultural sensitivity being factored into the design of AI and robotics technologies.
