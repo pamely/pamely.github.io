@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Automated detection of neonatal asphyxia"
-date:   2022-05-01 10:30:10 +00:00
+date:   2022-05-01 22:21:59 +00:00
 image: /images/dlproject.png
 categories: Report
 author: "Gladys INABEZA, Jacob RAST, Peter SAUER, Pamely Zantou"
