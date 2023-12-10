@@ -16,8 +16,9 @@ $white: #fff;
 
 // Font stacks
 $helvetica: Helvetica, Arial, sans-serif;
-$helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$helveticaNeue: 'Titillium Web', Verdana, Helvetica, sans-serif;
 $georgia: Georgia, serif;
+$titillium:'Titillium Web',  Verdana, sans-serif;
 
 // Mobile breakpoints
 @mixin mobile {
