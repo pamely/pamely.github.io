@@ -3,7 +3,7 @@ layout: post
 title:  "An Intelligent based System for Blind People Monitoring in a Smart Home"
 date:   2020-10-13 22:21:59 +00:00
 image: /images/teknix.png
-categories: research
+categories: Short paper
 author: "Pamely Zantou"
 authors: "<strong>Pamely Zantou</strong>, Ange Mikaël Mousse, Bethel Atohoun"
 venue: "Computer Science & Information Technology (CS & IT)"
