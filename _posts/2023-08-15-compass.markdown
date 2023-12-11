@@ -8,5 +8,6 @@ authors: Pamely Zantou
 authors: "<strong>Pamely Zantou</strong>, David Vernon"
 venue: ACM SIGCAS/SIGCHI Conference on Computing and Sustainable Societies - COMPASS, Cape Town (South Africa)
 pdf: http://www.vernon.eu/publications/2023_Zantou_Vernon_COMPASS_Poster.pdf
+video: https://cssr4africa.github.io/videos/COMPASS_2023.mp4
 ---
 The achievement of sustainable development goals requires collaboration and inclusivity among stakeholders, with artificial intelligence (AI) and robotics considered powerful tools for leveraging solutions. In this poster, we argue that inclusivity cannot be achieved without cultural sensitivity being factored into the design of AI and robotics technologies.
