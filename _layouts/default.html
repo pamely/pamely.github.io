@@ -99,7 +99,7 @@
               <em style="font-size: 13px; color: #737373"> {{post.venue}}, {{ post.date | date: "%Y-%m-%d" }}</em>
               <br>
               {% if post.pdf %}
-              <a href="{{post.pdf}}" style="font-size: 13px;">pdf</a> | 
+              <a href="{{post.pdf}}" style="font-size: 13px;">pdf</a> <em style="font-size: 13px; color: #737373"> | </em>
               {% endif %}
               {% if post.video %}
                 <a href="{{post.video}}" style="font-size: 13px;">video</a> 
