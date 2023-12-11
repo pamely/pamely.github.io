@@ -6,6 +6,6 @@ image: /images/multifon.jpg
 categories: Workshop
 authors: "Bonaventure Dossou, Iffanice Houndayi, <strong>Pamely Zantou</strong>, Gilles Hacheme"
 venue: "arXiv"
-arxiv: arXiv:2308.14280
+pdf: https://arxiv.org/abs/2308.14280
 ---
 We examine multitask learning in Natural Language Processing for the Fon language using a hard parameter-sharing approach. Tasks include Named Entity Recognition (NER) and Part of Speech (POS) Tagging, demonstrating the benefits of cross-linguality in low-resource contexts.
