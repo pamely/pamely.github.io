@@ -4,9 +4,8 @@ title:  "An Intelligent based System for Blind People Monitoring in a Smart Home
 date:   2020-10-13 22:21:59 +00:00
 image: /images/teknix.png
 categories: Paper
-author: "Pamely Zantou"
 authors: "<strong>Pamely Zantou</strong>, Ange Mikaël Mousse, Bethel Atohoun"
 venue: "Computer Science & Information Technology (CS & IT)"
-website: https://aircconline.com/csit/papers/vol10/csit101910.pdf
+pdf: "[pdf](https://aircconline.com/csit/papers/vol10/csit101910.pdf)"
 ---
 We designed an electronic white cane using sensor technology to aid visually impaired individuals. The cane identifies obstacles within a 2-meter range and provides vocal instructions through a Bluetooth headset and a mobile application.
