@@ -85,15 +85,16 @@
           {% for post in site.posts %}
           {% for cat in post.categories %}
           {% if cat == 'publications' or cat == 'Poster' or cat == 'Poster'  or cat == 'Paper' or cat == 'Workshop' %}
-          <tr>            
+          <tr>    
+            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px" class="zoom-container">
+              <img src="/tn{{post.image}}" alt="publications image" style="width:auto; height:auto; max-width:100%;" />
+            </td>
             <td style="padding:2.5%;width:75%;vertical-align:middle">
               <h3>{{post.title}}</h3>
               <br>
               <em>{{post.categories}} {{post.course}}</em>
               <br>
               {{post.venue}}, {{ post.date | date: "%Y-%m-%d" }}
-              <br>
-              {{post.paper}} 
               <br>
               {% if post.pdf %}
               <a href="{{post.pdf}}">pdf</a>
