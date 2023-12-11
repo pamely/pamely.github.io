@@ -102,8 +102,22 @@ span.highlight {
   background-color: #ffffd0;
 }
 
-.zoom-image:hover {
-  transform: scale(1.8);
+.zoom-image {
+  width: 500px;
+  height: 500px;
+  transition: transform 0.3s; /* Add a smooth transition effect */
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+}
+
+.zoom-container {
+  position: relative;
+  padding: 2.5%;
+  width: 25%;
+  vertical-align: middle;
+  min-width: 120px;
+  // box-sizing: border-box; /* Include padding in width calculation */
 }
 
 hr {
