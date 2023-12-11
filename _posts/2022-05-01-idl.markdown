@@ -4,7 +4,7 @@ title:  "Automated detection of neonatal asphyxia"
 date:   2022-05-01 22:21:59 +00:00
 image: /images/dlproject.png
 categories: "Report"
-author: Gladys INABEZA, Jacob RAST, Peter SAUER, <strong>Pamely Zantou</strong>
+authors: Gladys INABEZA, Jacob RAST, Peter SAUER, <strong>Pamely Zantou</strong>
 report: https://drive.google.com/file/d/1gSqBXHJYp2xACUCb33f0mBuTHoTZvnIt/view?usp=sharing
 ---
 This is the final report of the course [11-785 Introduction to Deep Learning](https://deeplearning.cs.cmu.edu/F22/index.html) given by Prof Bhiksha Raj. In this report we explored how deep learning methods can help diagnosed effectively birth asphyxia. We implemented CNN, Bi-LSTM and an attention based pipelines to perform experiments. 
