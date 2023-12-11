@@ -84,7 +84,7 @@
 
           {% for post in site.posts %}
           {% for cat in post.categories %}
-          {% if cat == 'publications' or cat == 'Poster' or cat == 'Poster'  or cat == 'Paper' or cat == 'Workshop' %}
+          {% if cat == 'publications' or cat == 'Poster'  or cat == 'Paper' or cat == 'Workshop' %}
           <tr>    
             <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px" class="zoom-container">
               <img src="/tn{{post.image}}" alt="publications image" style="width:auto; height:auto; max-width:100%;" />
@@ -99,7 +99,7 @@
               <em style="font-size: 13px; color: #737373"> {{post.venue}}, {{ post.date | date: "%Y-%m-%d" }}</em>
               <br>
               {% if post.pdf %}
-              <a href="{{post.pdf}}" style="font-size: 13px;">pdf</a>
+              <a href="{{post.pdf}}" style="font-size: 13px;">pdf</a> | <a href="{{post.video}}" style="font-size: 13px;">video</a> 
               {% endif %}
               <p></p>
               {{ post.excerpt }}
