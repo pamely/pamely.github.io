@@ -4,7 +4,7 @@ title:  "HumekaFL: Automated Detection of Neonatal Asphyxia Using Federated Lear
 date:   2023-11-28 22:21:59 +00:00
 image: /images/humeka.png
 categories: Poster 
-authors: "<strong>Pamely Zantou</strong>,Blessed Guda, Gladys Inabeza, Bereket Retta, Carlee Joe-Wone"
+authors: "<strong>Pamely Zantou</strong>,Blessed Guda, Gladys Inabeza, Bereket Retta, Carlee Joe-Wong"
 venue: "West Africa Conference on Digital Public Goods and Cybersecurity, Cotonou (Benin)"
 pdf: http://www.vernon.eu/publications/2023_Zantou_Vernon_Africon.pdf
 ---
