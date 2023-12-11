@@ -134,38 +134,20 @@
             <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
               <img src="/tn{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
             </td>
-            <td style="padding:2.5%;width:75%;vertical-align:middle">
+           <td style="padding:2.5%;width:75%;vertical-align:middle">
               <h3>{{post.title}}</h3>
               <br>
-              {{post.authors}}
-
+              <em style="font-size: 13px; color: #737373">{{post.categories}}</em>
               <br>
-              <em>{{post.venue}}</em>, {{ post.date | date: "%Y" }}
+              <em style="font-size: 13px; color: #737373">{{post.authors}}</em>
               <br>
-              {% if post.arxiv %}
-              <a href="{{post.arxiv}}">arxiv</a> /
-              {% endif %}
-              {% if post.video %}
-              <a href="{{post.video}}">video</a> /
-              {% endif %}
-              {% if post.code %}
-              <a href="{{post.code}}">code</a> /
-              {% endif %}
-              {% if post.poster %}
-              <a href="{{post.poster}}">poster</a> /
-              {% endif %}
-              {% if post.slides %}
-              <a href="{{post.slides}}">slides</a> /
-              {% endif %}
-              {% if post.website %}
-              <a href="{{post.website}}">website</a> /
-              {% endif %}
-              {% if post.youtube %}
-              <a href="{{post.youtube}}">youtube</a> /
-              {% endif %}
+              <em style="font-size: 13px; color: #737373"> {{post.venue}}, {{ post.date | date: "%Y-%m-%d" }}</em>
+              <br>
+              {% if post.report %}
+              <a href="{{post.report}}" style="font-size: 13px;">report</a> <em style="font-size: 13px; color: #737373"> 
               <p></p>
               {{ post.excerpt }}
-            </td>
+            </td>          
           </tr>
           {% endif %}
           {% endfor %}
