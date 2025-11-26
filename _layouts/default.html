@@ -8,229 +8,289 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-E00L9PT3V9');
   </script>
+
   <title>{{ site.name }}</title>
 
   <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-
   <meta name="author" content="{{ site.name }}" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,600,400italic,600italic,300,300italic" rel="stylesheet" type="text/css">
-
 </head>
 
 <body>
-  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-    <tr style="padding:0px">
-      <td style="padding:0px">   
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-          <tr style="padding:0px">
-            <td style="padding:2.5%;width:60%;vertical-align:middle">
-              <h1>
-                Pamely J. C. Zantou
-              </h1>
-              <hr>
-              <p>
-                Hello World ✋️ I love robots and I envision a world where they understand humans interactions and collaborate effectively across diverse domains, from hospitals to factories. 
-                I am equally enthusiastic about developing intelligent solutions that have the potential to save lives, particularly in the healthcare sector.
-              </p>
-              <p>
-                I am a Research Assistant working at the <a href="https://www.africa.engineering.cmu.edu/research/upanzi/index.html">Upanzi Network</a> working under the guidance of <a href="https://www.andrew.cmu.edu/user/cjoewong/"> Professor Carlee Joe-Wong </a>, PI of the Learning, Incentives, and Optimization for Networked Systems (<a href="https://research.ece.cmu.edu/lions/index.html">LIONS</a>) research group at <a href="https://www.cmu.edu/">Carnegie Mellon University</a> (CMU) and <a href="https://www.africa.engineering.cmu.edu/about/contact/directory/bios/gueye-assane.html"> Professor Assane Gueye</a>, co-director of the Upanzi Network at <a href="https://www.africa.engineering.cmu.edu/">CMU-Africa</a>. We are exploring efficients methods to diagnose Birth Asphyxia using babies cries and Federated Learning.
-              </p>
-              <p>
-                I received my Master's degree in Advanced Electrical and Computer Engineering from Carnegie Mellon University where I had the privilege of being supervised by Professor <a href="http://www.vernon.eu/"> David Vernon </a> for my Msc graduate project. Additionally, I served as his  research assistant for the <a href="https://cssr4africa.github.io/"> CSSR4Africa </a> project and as his teaching assistant for his courses <a href="https://www.africa.engineering.cmu.edu/academics/courses/18-799-L.html"> 18-799-L</a> Robotics: Principles and Practice and <a href="https://www.africa.engineering.cmu.edu/academics/courses/18-799-R.html"> 18-799-R</a> Cognitive Robotics. I completed my Bachelor's degree in Software Engineering at the University of Abomey-Calavi (<a href="https://uac.bj/">UAC</a>) in 2019. 
-              </p>
-              <p style="text-align:center">
-                <a target="_blank" href="mailto:pzantou@andrew.cmu.edu"> Email</a> &nbsp;/&nbsp;
-                <a href="https://drive.google.com/file/d/1qZMhgV7U5ERm_GJhy_rMBMCd089JdsGw/view?usp=sharing">CV</a> &nbsp;/&nbsp;
-                <a href="https://shorturl.at/frAQU">Google Scholar</a> &nbsp;/&nbsp;
-                <a href="https://www.linkedin.com/in/pamely-zantou/"> LinkedIn </a>
-              </p>
-            </td>
-            <td style="padding:2.5%;width:40%;max-width:40%">
-              <img style="width:100%;max-width:100%" alt="profile photo" src="images/pam-image.png">
-            </td>
-          </tr>
-        </table>
-         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-          <tr>
-            <td style="padding:2.5%;width:100%;vertical-align:middle">
-              <h2>Research Interests</h2>
-              <p>
-                My goal is to design human-centered AI systems that can interact effectively with humans and collaborate with them. At the core of my research interests lies society. This entails not only fostering respect for every individual but also implementing systems that ensure and safeguard individual security. I am interested in social robotics, optimization, edge computing, deep reinforcement learning, computer vision and privacy preserving machine learning/AI. 
 
-              </p>
-            </td>
-          </tr>
-        </table>
-        <hr>
-        <br>
-        <br>
-        <br>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-          <tr>
-            <td style="padding:2.5%;width:100%;vertical-align:middle">
-              <h2>Publications</h2>
-              <p>  A heartfelt thank you to all the individuals who contributed to these publications! </p>
-            </td>
-          </tr>
-        </table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+  <!-- Top navigation -->
+  <nav class="top-nav">
+    <div class="top-nav-left">
+      <a href="#about" class="nav-link active">about</a>
+      <a href="#research" class="nav-link">research</a>
+      <a href="#publications" class="nav-link">publications</a>
+      <a href="#projects" class="nav-link">projects</a>
+      <a href="#awards" class="nav-link">awards</a>
+      <a href="https://drive.google.com/file/d/1qZMhgV7U5ERm_GJhy_rMBMCd089JdsGw/view?usp=sharing" class="nav-link" target="_blank">cv</a>
+    </div>
+  </nav>
 
-          {% for post in site.posts %}
+  <div class="page-layout">
+    <!-- Sidebar / left column -->
+    <aside class="sidebar">
+      <img src="{{ site.baseurl }}/images/pam-image.png" alt="Pamely Zantou portrait" class="profile-photo" />
+
+      <h1 class="name">Pamely J. C. Zantou</h1>
+      <p class="tagline">
+        AI for Digital Health &amp; Human-Centered Robotics
+      </p>
+
+      <p class="affiliation">
+        Research Assistant, <a href="https://www.africa.engineering.cmu.edu/research/upanzi/index.html" target="_blank">Upanzi Network</a><br/>
+        <span class="affiliation-sub">
+          Carnegie Mellon University Africa
+        </span>
+      </p>
+
+      <div class="contact-block">
+        <div>Email:
+          <a target="_blank" href="mailto:pzantou@andrew.cmu.edu">pzantou@andrew.cmu.edu</a>
+        </div>
+        <div>
+          <a href="https://drive.google.com/file/d/1qZMhgV7U5ERm_GJhy_rMBMCd089JdsGw/view?usp=sharing" target="_blank">CV</a> &nbsp;·&nbsp;
+          <a href="https://shorturl.at/frAQU" target="_blank">Google Scholar</a> &nbsp;·&nbsp;
+          <a href="https://www.linkedin.com/in/pamely-zantou/" target="_blank">LinkedIn</a>
+        </div>
+      </div>
+
+      <div class="sidebar-section">
+        <h2 class="sidebar-heading">Research keywords</h2>
+        <ul class="keyword-list">
+          <li>Digital health &amp; AI</li>
+          <li>Federated learning</li>
+          <li>Speech &amp; audio ML</li>
+          <li>Human–robot interaction</li>
+          <li>Privacy-preserving ML</li>
+        </ul>
+      </div>
+    </aside>
+
+    <!-- Main content / right column -->
+    <main class="main-content">
+
+      <!-- ABOUT -->
+      <section id="about" class="section-block">
+        <h2>About</h2>
+        <p>
+          Hello World ✋️ I love robots and I envision a world where they understand human interactions
+          and collaborate effectively across diverse domains, from hospitals to factories. I am equally
+          enthusiastic about developing intelligent solutions that have the potential to save lives,
+          particularly in the healthcare sector.
+        </p>
+        <p>
+          I am a Research Assistant working at the
+          <a href="https://www.africa.engineering.cmu.edu/research/upanzi/index.html">Upanzi Network</a>,
+          under the guidance of
+          <a href="https://www.andrew.cmu.edu/user/cjoewong/">Professor Carlee Joe-Wong</a>,
+          PI of the Learning, Incentives, and Optimization for Networked Systems
+          (<a href="https://research.ece.cmu.edu/lions/index.html">LIONS</a>) research group at
+          <a href="https://www.cmu.edu/">Carnegie Mellon University</a> (CMU), and
+          <a href="https://www.africa.engineering.cmu.edu/about/contact/directory/bios/gueye-assane.html">Professor Assane Gueye</a>,
+          co-director of the Upanzi Network at
+          <a href="https://www.africa.engineering.cmu.edu/">CMU-Africa</a>. We are exploring efficient
+          methods to diagnose Birth Asphyxia using babies’ cries and federated learning.
+        </p>
+        <p>
+          I received my Master's degree in Advanced Electrical and Computer Engineering from Carnegie Mellon
+          University where I had the privilege of being supervised by
+          <a href="http://www.vernon.eu/">Professor David Vernon</a> for my MSc graduate project.
+          Additionally, I served as his research assistant for the
+          <a href="https://cssr4africa.github.io/">CSSR4Africa</a> project and as his teaching assistant
+          for his courses
+          <a href="https://www.africa.engineering.cmu.edu/academics/courses/18-799-L.html">18-799-L</a>
+          Robotics: Principles and Practice and
+          <a href="https://www.africa.engineering.cmu.edu/academics/courses/18-799-R.html">18-799-R</a>
+          Cognitive Robotics. I completed my Bachelor's degree in Software Engineering at the
+          University of Abomey-Calavi (<a href="https://uac.bj/">UAC</a>) in 2019.
+        </p>
+      </section>
+
+      <!-- RESEARCH INTERESTS -->
+      <section id="research" class="section-block">
+        <h2>Research interests</h2>
+        <p>
+          My goal is to design human-centered AI systems that can interact effectively with humans and
+          collaborate with them. At the core of my research interests lies society: not only fostering
+          respect for every individual but also implementing systems that ensure and safeguard individual
+          security.
+        </p>
+        <p>
+          I am interested in social robotics, optimization, edge computing, deep reinforcement learning,
+          computer vision, and privacy-preserving machine learning/AI.
+        </p>
+      </section>
+
+      <!-- OPTIONAL NEWS -->
+      <section id="news" class="section-block">
+        <h2>News</h2>
+        <ul class="news-list">
+          <li><span class="news-date">2025</span> Starting my PhD in AI for digital health (details soon).</li>
+          <li><span class="news-date">2023</span> Jeremiah N. Mpagazehe Rising Researcher Award at CMU-Africa.</li>
+          <li><span class="news-date">2023</span> HumekaFL poster presented at the West Africa Conference on Digital Public Goods and Cybersecurity.</li>
+        </ul>
+      </section>
+
+      <!-- PUBLICATIONS -->
+      <section id="publications" class="section-block">
+        <h2>Publications</h2>
+        <p class="section-intro">
+          A heartfelt thank you to all the individuals who contributed to these publications!
+        </p>
+
+        {% for post in site.posts %}
+          {% assign is_pub = false %}
           {% for cat in post.categories %}
-          {% if cat == 'publications' or cat == 'Poster'  or cat == 'Paper' or cat == 'Workshop' %}
-          <tr>    
-            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px" class="zoom-container">
-              <img src="/tn{{post.image}}" alt="publications image" style="width:auto; height:auto; max-width:100%;"  class="zoom-image"/>
-            </td>
-            <td style="padding:2.5%;width:75%;vertical-align:middle">
-              <h3>{{post.title}}</h3>
-              <br>
-              <em style="font-size: 13px; color: #737373">{{post.categories}}</em>
-              <br>
-              <em style="font-size: 13px; color: #737373">{{post.authors}}</em>
-              <br>
-              <em style="font-size: 13px; color: #737373"> {{post.venue}}, {{ post.date | date: "%Y-%m-%d" }}</em>
-              <br>
-              {% if post.pdf %}
-              <a href="{{post.pdf}}" style="font-size: 13px;">pdf</a> <em style="font-size: 13px; color: #737373"> | </em>
+            {% if cat == 'publications' or cat == 'Poster' or cat == 'Paper' or cat == 'Workshop' %}
+              {% assign is_pub = true %}
+            {% endif %}
+          {% endfor %}
+          {% if is_pub %}
+            <div class="pub-item">
+              {% if post.image %}
+              <div class="pub-thumb">
+                <img src="{{ site.baseurl }}/tn{{ post.image }}" alt="publications image" />
+              </div>
               {% endif %}
-              {% if post.video %}
-                <a href="{{post.video}}" style="font-size: 13px;">video</a> 
-              {% endif %}
-              <p></p>
-              {{ post.excerpt }}
-            </td>
-          </tr>
+              <div class="pub-body">
+                <h3 class="pub-title">{{ post.title }}</h3>
+                <div class="pub-meta">
+                  <em class="pub-cat">{{ post.categories }}</em><br/>
+                  <em class="pub-authors">{{ post.authors }}</em><br/>
+                  <em class="pub-venue">{{ post.venue }}, {{ post.date | date: "%Y-%m-%d" }}</em>
+                </div>
+                <div class="pub-links">
+                  {% if post.pdf %}
+                    <a href="{{ post.pdf }}" target="_blank">pdf</a>
+                    {% if post.video %}<span> · </span>{% endif %}
+                  {% endif %}
+                  {% if post.video %}
+                    <a href="{{ post.video }}" target="_blank">video</a>
+                  {% endif %}
+                </div>
+                <div class="pub-excerpt">
+                  {{ post.excerpt }}
+                </div>
+              </div>
+            </div>
           {% endif %}
-          {% endfor %}
-          {% endfor %}
-        </table>
-        <hr>
-        <br>
-        <br>
-        <br>
-         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-          <tr>
-            <td style="padding:2.5%;width:100%;vertical-align:middle">
-              <h2>Projects</h2>
-              <p>These include coursework, side projects and unpublished research work. 
-              </p></p>
-            </td>
-          </tr>
-        </table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+        {% endfor %}
+      </section>
 
-          {% for post in site.posts %}
+      <!-- PROJECTS -->
+      <section id="projects" class="section-block">
+        <h2>Projects</h2>
+        <p class="section-intro">
+          These include coursework, side projects, and unpublished research work.
+        </p>
+
+        {% for post in site.posts %}
+          {% assign is_proj = false %}
           {% for cat in post.categories %}
-          {% if cat == 'Project' or cat == 'Report' %}
-          <tr>
-            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
-              <img src="/tn{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
-            </td>
-           <td style="padding:2.5%;width:75%;vertical-align:middle">
-              <h3>{{post.title}}</h3>
-              <br>
-              <em style="font-size: 13px; color: #737373">{{post.categories}}</em>
-              <br>
-              <em style="font-size: 13px; color: #737373">{{post.authors}}</em>
-              <br>
-              <em style="font-size: 13px; color: #737373">{{ post.date | date: "%Y-%m-%d" }}</em>
-              <br>
-              {% if post.report %}
-              <a href="{{post.report}}" style="font-size: 13px;">report</a> 
+            {% if cat == 'Project' or cat == 'Report' %}
+              {% assign is_proj = true %}
+            {% endif %}
+          {% endfor %}
+          {% if is_proj %}
+            <div class="project-item">
+              {% if post.image %}
+              <div class="project-thumb">
+                <img src="{{ site.baseurl }}/tn{{ post.image }}" alt="project image" />
+              </div>
               {% endif %}
-              <p></p>
-              {{ post.excerpt }}
-            </td>          
-          </tr>
+              <div class="project-body">
+                <h3 class="project-title">{{ post.title }}</h3>
+                <div class="project-meta">
+                  <em class="project-cat">{{ post.categories }}</em><br/>
+                  <em class="project-authors">{{ post.authors }}</em><br/>
+                  <em class="project-date">{{ post.date | date: "%Y-%m-%d" }}</em>
+                </div>
+                <div class="project-links">
+                  {% if post.report %}
+                    <a href="{{ post.report }}" target="_blank">report</a>
+                  {% endif %}
+                </div>
+                <div class="project-excerpt">
+                  {{ post.excerpt }}
+                </div>
+              </div>
+            </div>
           {% endif %}
-          {% endfor %}
-          {% endfor %}
-        </table>
-        <hr>
-        <br>
-        <br>
-        <br>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-          <tr>
-            <td style="padding:2.5%;width:100%;vertical-align:middle">
-              <h2>🏆 Awards 🏆</h2>
-              </p><a href="https://www.africa.engineering.cmu.edu/students/fellowships-awards.html">Jeremiah N. Mpagazehe Rising Researcher Award for the class of 2023 at CMU-Africa</a></p>
-              </p><a href="https://www.ieee-ras.org/women-in-engineering/idea-winners">IEEE-RAS WiE IDEA Award</a></p>
-            </td>
-          </tr>
-        </table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+        {% endfor %}
+      </section>
 
-          {% for post in site.posts %}
+      <!-- AWARDS -->
+      <section id="awards" class="section-block">
+        <h2>🏆 Awards 🏆</h2>
+        <ul class="award-list">
+          <li>
+            <a href="https://www.africa.engineering.cmu.edu/students/fellowships-awards.html" target="_blank">
+              Jeremiah N. Mpagazehe Rising Researcher Award for the class of 2023 at CMU-Africa
+            </a>
+          </li>
+          <li>
+            <a href="https://www.ieee-ras.org/women-in-engineering/idea-winners" target="_blank">
+              IEEE-RAS WiE IDEA Award
+            </a>
+          </li>
+        </ul>
+
+        {% for post in site.posts %}
+          {% assign is_award = false %}
           {% for cat in post.categories %}
-          {% if cat == 'award' %}
-          <tr>
-            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
-              <img src="/tn{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
-            </td>
-            <td style="padding:2.5%;width:75%;vertical-align:middle">
-              <h3>{{post.title}}</h3>
-              <br>
-              {{post.authors}}
-
-              <br>
-              <em>{{post.venue}}</em>, {{ post.date | date: "%Y" }}
-              <br>
-              {% if post.arxiv %}
-              <a href="{{post.arxiv}}">arxiv</a> /
+            {% if cat == 'award' %}
+              {% assign is_award = true %}
+            {% endif %}
+          {% endfor %}
+          {% if is_award %}
+            <div class="award-item">
+              {% if post.image %}
+              <div class="award-thumb">
+                <img src="{{ site.baseurl }}/tn{{ post.image }}" alt="award image" />
+              </div>
               {% endif %}
-              {% if post.video %}
-              <a href="{{post.video}}">video</a> /
-              {% endif %}
-              {% if post.code %}
-              <a href="{{post.code}}">code</a> /
-              {% endif %}
-              {% if post.poster %}
-              <a href="{{post.poster}}">poster</a> /
-              {% endif %}
-              {% if post.slides %}
-              <a href="{{post.slides}}">slides</a> /
-              {% endif %}
-              {% if post.website %}
-              <a href="{{post.website}}">website</a> /
-              {% endif %}
-              {% if post.youtube %}
-              <a href="{{post.youtube}}">youtube</a> /
-              {% endif %}
-              <p></p>
-              {{ post.excerpt }}
-            </td>
-          </tr>
+              <div class="award-body">
+                <h3 class="award-title">{{ post.title }}</h3>
+                <div class="award-meta">
+                  {{ post.authors }}<br/>
+                  <em>{{ post.venue }}</em>, {{ post.date | date: "%Y" }}
+                </div>
+                <div class="award-links">
+                  {% if post.arxiv %}<a href="{{ post.arxiv }}" target="_blank">arxiv</a> · {% endif %}
+                  {% if post.video %}<a href="{{ post.video }}" target="_blank">video</a> · {% endif %}
+                  {% if post.code %}<a href="{{ post.code }}" target="_blank">code</a> · {% endif %}
+                  {% if post.poster %}<a href="{{ post.poster }}" target="_blank">poster</a> · {% endif %}
+                  {% if post.slides %}<a href="{{ post.slides }}" target="_blank">slides</a> · {% endif %}
+                  {% if post.website %}<a href="{{ post.website }}" target="_blank">website</a> · {% endif %}
+                  {% if post.youtube %}<a href="{{ post.youtube }}" target="_blank">youtube</a> · {% endif %}
+                </div>
+                <div class="award-excerpt">
+                  {{ post.excerpt }}
+                </div>
+              </div>
+            </div>
           {% endif %}
-          {% endfor %}
-          {% endfor %}
-        </table>
-        <hr>
-        <br>
-        <br>
-        <br>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-          <tr>
-            <td style="padding:0px">
-              <br>
-              <p style="text-align:center;font-size:small;">
-                Design and source code from <a style="font-size:small;" href="https://jonbarron.info">Jon Barron's website</a>
-              </p>
-            </td>
-          </tr>
-        </table>
-      </td>
-    </tr>
-  </table>
+        {% endfor %}
+      </section>
+
+      <footer class="site-footer">
+        <span>© {{ site.time | date: "%Y" }} {{ site.name }}</span>
+        <span class="footer-separator">·</span>
+        <span>Design inspired by <a href="https://jonbarron.info" target="_blank">Jon Barron</a>.</span>
+      </footer>
+
+    </main>
+  </div>
+
 </body>
-
 </html>
-
