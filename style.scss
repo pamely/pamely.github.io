@@ -126,6 +126,24 @@ hr {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
 
+.pub-list {
+  margin-top: 1.5rem;
+}
+
+.pub-item {
+  margin-bottom: 1.2rem;
+}
+
+.pub-title {
+  font-weight: 600;
+  color: #182B49;   // your highlight blue
+}
+
+.pub-authors,
+.pub-venue {
+  font-size: 0.95rem;
+}
+
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 //@import "highlights";
