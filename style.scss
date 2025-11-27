@@ -1,150 +1,609 @@
 ---
 ---
+/* ===========================================
+   GLOBAL
+   =========================================== */
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  background-color: #f9fafb;
+  color: #111827;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
 
-//
-// IMPORTS
-//
-
-//@import "reset";
-//@import "variables";
-// Syntax highlighting @import is at the bottom of this file
-
-/**************/
-/* BASE RULES */
-/**************/
-a {
-  color: #1772d0;
+/* Default links (everywhere, except header nav override below) */
+a,
+a:visited {
+  color: #00629B;
   text-decoration: none;
 }
 
-a:focus,
 a:hover {
-  color: #f09228;
-  text-decoration: none;
+  color: #004d78;
+  text-decoration: underline;
 }
 
-body,
-td,
-th,
-tr,
-p,
-a {
-  font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
-  font-size: 16px;
-  font-display: auto;
-  font-weight: 400;
-  text-align: justify;
+/* Email / contact links */
+.contact-block a,
+.contact-links a {
+  color: #00629B;
 }
 
-strong {
-  font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
-  font-size: 16px;
-  font-display: auto;
-  font-weight: 400;
+/* ===========================================
+   TOP NAVIGATION (RIGHT-ALIGNED)
+   =========================================== */
+
+.top-nav {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  backdrop-filter: blur(12px);
+  background-color: rgba(249, 250, 251, 0.85);
+  border-bottom: 1px solid #e5e7eb;
+  padding: 12px 24px;
 }
 
-h2 {
-  font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
-  font-size: 24px;
-  font-display: auto;
+.top-nav-container {
+  max-width: 1250px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end; /* push nav to the RIGHT */
+  align-items: center;
+}
+
+.top-nav-right {
+  display: flex;
+  gap: 2rem;
+}
+
+/* HEADER NAV LINKS — stay black in light mode */
+.top-nav .nav-link,
+.top-nav .nav-link:visited {
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: lowercase;
+  color: #111827; /* black */
+}
+
+.top-nav .nav-link:hover {
+  color: #00629B; /* blue hover */
   font-weight: 600;
-  padding: 0px;
-  margin: 0px;
-  display:inline; 
 }
 
-h3 {
-  font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
-  font-size: 16px;
-  font-weight: 700;
-  font-display: auto;
-  padding: 0px;
-  margin: 0px;
-  display:inline; 
+/* ===========================================
+   PAGE LAYOUT (NO ROUND BOXES)
+   =========================================== */
+.page-layout {
+  display: flex;
+  max-width: 1250px;
+  margin: 40px auto;
+  padding: 0 24px;
+  gap: 60px;
 }
 
-h1 {
-  font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
-  font-size: 38px;
-  font-weight: 700;
-  font-display: auto;
-  text-align: center;
-  padding: 0px;
-  margin-block-start: 14px;
-  margin-block-end: 14px;
-  margin-left: 0px;
-  margin-right: 0px;
-
+/* ===========================================
+   SIDEBAR (NO ROUNDED BACKGROUND)
+   =========================================== */
+.sidebar {
+  width: 280px;
+  flex-shrink: 0;
+  position: sticky;
+  top: 100px;
+  align-self: flex-start;
+  background: transparent;
+  padding: 0;
+  border-radius: 0;
+  box-shadow: none;
 }
 
-.one {
-  width: 160px;
-  height: 160px;
-  position: relative;
-}
-
-.two {
-  width: 160px;
-  height: 160px;
-  position: absolute;
-  transition: opacity .2s ease-in-out;
-  -moz-transition: opacity .2s ease-in-out;
-  -webkit-transition: opacity .2s ease-in-out;
-}
-
-.fade {
-  transition: opacity .2s ease-in-out;
-  -moz-transition: opacity .2s ease-in-out;
-  -webkit-transition: opacity .2s ease-in-out;
-}
-
-span.highlight {
-  background-color: #ffffd0;
-}
-
-.zoom-image {
-  width: 500px;
-  height: 500px;
-  transition: transform 0.3s; /* Add a smooth transition effect */
+.profile-photo {
   width: 100%;
-  height: auto;
-  max-width: 100%;
+  border-radius: 12px;
+  margin-bottom: 16px;
 }
 
-.zoom-container {
-  position: relative;
-  padding: 2.5%;
-  width: 25%;
-  vertical-align: middle;
-  min-width: 120px;
-  // box-sizing: border-box; /* Include padding in width calculation */
+.name {
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0;
+  color: #182b49;
 }
 
-hr {
-  border: 0;
-  height: 1px;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+.tagline {
+  font-size: 16px;
+  margin: 8px 0 16px;
+  color: #374151;
 }
 
-.pub-list {
-  margin-top: 1.5rem;
+.affiliation {
+  margin-bottom: 24px;
+  font-size: 15px;
+  color: #374151;
 }
 
+.contact-block {
+  margin-bottom: 24px;
+  font-size: 14px;
+}
+
+.sidebar-section {
+  margin-top: 24px;
+}
+
+.sidebar-heading {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #182b49;
+}
+
+/* ===========================================
+   MAIN CONTENT
+   =========================================== */
+.main-content {
+  flex-grow: 1;
+  max-width: 800px;
+
+  background: transparent;
+  padding: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.section-block {
+  margin-bottom: 60px;
+}
+
+.section-block h2 {
+  font-size: 26px;
+  font-weight: 700;
+  color: #182b49;
+  margin-bottom: 16px;
+}
+
+.section-intro {
+  font-size: 15px;
+  margin-bottom: 24px;
+  color: #4b5563;
+}
+
+/* ===========================================
+   CONTENT ELEMENTS
+   =========================================== */
+.news-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.news-date {
+  color: #182b49;
+  font-weight: 600;
+}
+
+/* Publication, Project, Award items */
+// .pub-item,
+// .project-item,
+// .award-item {
+//   display: flex;
+//   gap: 24px;
+//   margin-bottom: 40px;
+// }
+
+// .pub-thumb img,
+// .project-thumb img,
+// .award-thumb img {
+//   width: 120px;
+//   border-radius: 6px;
+// }
+
+/* ===========================================
+   PUBLICATION ITEMS
+   =========================================== */
 .pub-item {
-  margin-bottom: 1.2rem;
+  display: flex;
+  column-gap: 32px;
+  margin-bottom: 40px;
+  align-items: flex-start;              /* Clean top alignment */
+}
+
+.pub-thumb {
+  flex: 0 0 180px;                      /* Fixed column for image */
+  max-width: 180px;
+}
+
+.pub-thumb img {
+  display: block;
+  width: 100%;                          /* Fill the 180px column */
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.pub-body {
+  flex-grow: 1;
 }
 
 .pub-title {
+  font-size: 20px;
   font-weight: 600;
-  color: #182B49;   // your highlight blue
+  margin: 0 0 8px;
 }
 
-.pub-authors,
-.pub-venue {
-  font-size: 0.95rem;
+.pub-meta {
+  font-size: 14px;
+  color: #6b7280;
+  margin-bottom: 8px;
 }
 
-// Settled on moving the import of syntax highlighting to the bottom of the CSS
-// ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
-//@import "highlights";
-//@import "svg-icons";
+.pub-links a {
+  font-size: 14px;
+}
+
+.pub-excerpt {
+  margin-top: 8px;
+  font-size: 15px;
+}
+
+/* ===========================================
+   PROJECT ITEMS
+   =========================================== */
+.project-item {
+  display: flex;
+  column-gap: 32px;
+  margin-bottom: 40px;
+  align-items: flex-start;
+}
+
+.project-thumb {
+  flex: 0 0 180px;
+  max-width: 180px;
+}
+
+.project-thumb img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.project-body {
+  flex-grow: 1;
+}
+
+.project-title {
+  font-size: 20px;
+  margin: 0 0 8px;
+  font-weight: 600;
+}
+
+.project-meta {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.project-excerpt {
+  margin-top: 8px;
+}
+
+/* ===========================================
+   AWARDS
+   =========================================== */
+.award-list {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 24px;
+}
+
+.award-item {
+  display: flex;
+  column-gap: 32px;
+  margin-bottom: 40px;
+  align-items: flex-start;
+}
+
+.award-thumb {
+  flex: 0 0 180px;
+  max-width: 180px;
+}
+
+.award-thumb img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.award-body {
+  flex-grow: 1;
+}
+
+.award-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0 0 8px;
+}
+
+.award-meta {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.award-links a {
+  font-size: 14px;
+}
+
+.award-excerpt {
+  margin-top: 8px;
+}
+
+/* ===========================================
+   FOOTER
+   =========================================== */
+.site-footer {
+  margin: 80px 0 40px;
+  font-size: 14px;
+  color: #6b7280;
+  text-align: center;
+}
+
+.footer-separator {
+  margin: 0 8px;
+}
+
+/* ===========================================
+   RESPONSIVE
+   =========================================== */
+@media (max-width: 900px) {
+  .page-layout {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    top: 0;
+  }
+}
+
+/* ===========================================
+   CV PAGE (Nancy-style cards, blue theme)
+   =========================================== */
+
+.cv-page {
+  max-width: 900px;
+}
+
+.cv-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 24px;
+  color: #182b49;
+}
+
+.cv-section-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.06);
+  padding: 20px 24px 24px;
+  margin-bottom: 24px;
+}
+
+.cv-section-heading {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: #111827;
+}
+
+.cv-info-list {
+  margin: 0;
+}
+
+.cv-info-row {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 8px;
+  margin-bottom: 4px;
+  font-size: 15px;
+}
+
+.cv-info-row dt {
+  font-weight: 600;
+}
+
+.cv-info-row dd {
+  margin: 0;
+}
+
+.cv-download {
+  margin-top: 16px;
+  font-size: 14px;
+}
+
+/* Education / Experience rows */
+
+.cv-edu-entry {
+  display: flex;
+  gap: 20px;
+  padding: 14px 0;
+  border-top: 1px solid #e5e7eb;
+}
+
+.cv-edu-entry:first-of-type {
+  border-top: none;
+  padding-top: 0;
+}
+
+.cv-edu-badge {
+  align-self: flex-start;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background-color: #182b49;
+  color: #ffffff;
+  white-space: nowrap;
+}
+
+.cv-edu-body h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0 0 4px;
+}
+
+.cv-edu-line {
+  font-size: 14px;
+  color: #374151;
+  margin-bottom: 4px;
+}
+
+.cv-edu-body ul {
+  margin: 4px 0 0 18px;
+  padding: 0;
+  font-size: 14px;
+}
+
+/* Simple lists for interests / skills */
+
+.cv-list {
+  margin: 0;
+  padding-left: 18px;
+  font-size: 14px;
+}
+
+.cv-list li {
+  margin-bottom: 4px;
+}
+
+/* Responsive tweaks */
+
+@media (max-width: 700px) {
+  .cv-info-row {
+    grid-template-columns: 1fr;
+  }
+
+  .cv-edu-entry {
+    flex-direction: column;
+  }
+
+  .cv-edu-badge {
+    align-self: flex-start;
+  }
+}
+
+/* ===========================================
+   DARK MODE TOGGLE BUTTON
+   =========================================== */
+.dark-mode-btn {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  margin-left: 16px;
+  padding: 4px;
+  transition: transform 0.2s;
+  color: #e5e7eb;
+}
+
+.dark-mode-btn:hover {
+  transform: scale(1.2);
+}
+
+/* ===========================================
+   DARK MODE THEME (Nancy-style colors)
+   =========================================== */
+
+body.dark-mode {
+  background-color: #020617;        /* very dark background */
+  color: #e5e7eb;                   /* light gray text */
+}
+
+/* Global links in dark mode */
+body.dark-mode a,
+body.dark-mode a:visited {
+  color: #66b7dd;
+}
+
+body.dark-mode a:hover {
+  color: #99d2ec;
+}
+
+/* HEADER NAV LINKS in dark mode (white) */
+body.dark-mode .top-nav .nav-link,
+body.dark-mode .top-nav .nav-link:visited {
+  color: #ffffff !important;
+}
+
+body.dark-mode .top-nav .nav-link:hover {
+  color: #66b7dd !important;
+}
+
+/* Top nav bar */
+body.dark-mode .top-nav {
+  background-color: rgba(15, 23, 42, 0.96);
+  border-bottom-color: #1f2937;
+}
+
+/* Sidebar + main on homepage stay flat on dark bg */
+body.dark-mode .sidebar {
+  background: transparent;
+  box-shadow: none;
+}
+
+body.dark-mode .main-content {
+  background: transparent;
+  box-shadow: none;
+}
+
+/* Headings */
+body.dark-mode .name,
+body.dark-mode .section-block h2,
+body.dark-mode .sidebar-heading,
+body.dark-mode .cv-title,
+body.dark-mode .cv-section-heading {
+  color: #e5e7eb;
+}
+
+/* Secondary text */
+body.dark-mode .tagline,
+body.dark-mode .affiliation,
+body.dark-mode .affiliation-sub,
+body.dark-mode .pub-meta,
+body.dark-mode .project-meta,
+body.dark-mode .award-meta,
+body.dark-mode .section-intro {
+  color: #cbd5f5;
+}
+
+/* CV cards — dark panels like Nancy's */
+body.dark-mode .cv-section-card {
+  background-color: #111827;
+  border-color: #1f2937;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.9);
+  color: #e5e7eb;
+}
+
+/* CV year badges */
+body.dark-mode .cv-edu-badge {
+  background-color: #0ea5e9;
+  color: #e0f2fe;
+}
+
+/* Divider lines inside CV entries */
+body.dark-mode .cv-edu-entry {
+  border-top-color: #1f2937;
+}
+
+/* Footer */
+body.dark-mode .site-footer {
+  color: #9ca3af;
+}
+
+/* News dates & small labels */
+body.dark-mode .news-date {
+  color: #93c5fd;
+}

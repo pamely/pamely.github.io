@@ -1,0 +1,11 @@
+---
+layout: post
+title:  "Towards A Low-Cost Mobile Internet Measurement Infrastructure: An Initial Deployment in Africa"
+date:   2024-11-04 22:21:59 +00:00
+image: /images/mira.png
+categories: Poster
+authors: "Erick Semindu, <strong>Pamely Zantou</strong>, Eyerusalem Birhan, Semebia Y. Wurah, Theophilus Benson, Assane Gueye"
+venue: " ACM SIGCOM, International Measurement Conference, Madrid, Spain"
+pdf: https://dl.acm.org/doi/pdf/10.1145/3646547.3689682
+---
+Africa's broadband lags, with high costs & slow speeds. Current measurement tools, designed in the West, don't fit Africa's context. We propose a cost-effective, context-based mobile broadband measurement infrastructure.

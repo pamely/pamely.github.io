@@ -1,0 +1,152 @@
+---
+layout: default
+title: Home
+---
+
+<section id="about" class="section-block">
+  <h2>About</h2>
+  <p>
+    Hello World ✋️ I am a PhD student in the
+    <a href="https://digihealth.ucsd.edu/">DigiHealth Lab</a> at the University of California, San Diego,
+    advised by <a href="https://www.ejaywang.com">Prof. Edward Wang</a>. I am also affiliated with
+    <a href="https://designlab.ucsd.edu/">The Design Lab</a>.
+  </p>
+
+  <p>
+    Previously I worked at the
+    <a href="https://www.africa.engineering.cmu.edu/research/upanzi/index.html">Upanzi Digital Infrastructure Network</a>
+    as a Research Associate under the supervision of <a href="https://www.ece.cmu.edu/directory/bios/joe-wong-carlee.html">Professor Carlee Joe-Wong</a>, PI of the
+    <a href="https://research.ece.cmu.edu/lions/index.html">LIONS</a> research group at
+    <a href="https://www.cmu.edu/">Carnegie Mellon University</a> (CMU), and
+    <a href="https://www.africa.engineering.cmu.edu/about/contact/directory/bios/gueye-assane.html">
+      Professor Assane Gueye
+    </a>, co-director of the Upanzi Network at
+    <a href="https://www.africa.engineering.cmu.edu/">CMU-Africa</a>. I led the HumekaFL digital health research
+    project, which explores efficient methods to diagnose birth asphyxia using babies’ cries and federated learning.
+    I was also privileged to work in the Robotics and AI Lab under the guidance of
+    <a href="http://www.vernon.eu/">Professor David Vernon</a>, where my research in social robotics focused on
+    developing ROS-based robot behaviors for effective human–robot interaction in Africa.
+  </p>
+
+  <p>
+    I design and develop end-to-end human-centered AI mobile medical systems that can interact effectively with humans,
+    understand their needs, and help make effective and informed decisions.
+  </p>
+</section>
+
+<section id="news" class="section-block">
+  <h2>News</h2>
+  <ul class="news-list">
+    <li><span class="news-date">2025</span> Starting my PhD at <a href="https://ucsd.edu/">UC San Diego</a>! </li>
+    <li><span class="news-date">2024</span> Our <a href="https://dl.acm.org/doi/10.1145/3646547.3689682">poster</a> got accepted at the ACM IMC Conference!</li>
+    <li><span class="news-date">2024</span> Our <a href="https://2024.compass.acm.org/index.html%3Fp=10259.html">poster</a> got accepted at the ACM COMPASS Conference!</li>
+    <li><span class="news-date">2023</span> Our <a href="https://arxiv.org/abs/2308.14280">paper</a> got accepted at WiNLP workshop, co-located at EMNLP!</li>
+    <li><span class="news-date">2023</span> Graduated from CMU and honored with the <a href="https://www.africa.engineering.cmu.edu/students/fellowships-awards.html">Jeremiah N. Mpagazehe Rising Researcher Award</a> at CMU-Africa!</li>
+    <li><span class="news-date">2023</span> Honored to receive the <a href="https://www.ieee-ras.org/women-in-engineering/idea-winners">IEEE-RAS WiE IDEA Travel Grant</a> to attend the International Conference on Robotics and Automation (ICRA)!</li>
+    <li><span class="news-date">2023</span> Our work HumekaFL got accepted at the <a href="https://www.africa.engineering.cmu.edu/events/2023/11/28-29-dpg-conference.html">West Africa DPG &amp; Cybersecurity Conference</a>!</li>
+    <li><span class="news-date">2023</span> Our <a href="https://ieeexplore.ieee.org/document/10293271/">paper</a> got accepted at the IEEE AFRICON Conference!</li>
+    <li><span class="news-date">2023</span> Our <a href="https://2023.compass.acm.org/index.html%3Fp=8129.html">poster</a> got accepted at the ACM COMPASS Conference!</li>
+  </ul>
+</section>
+
+<section id="publications" class="section-block">
+  <h2>Publications</h2>
+  <p class="section-intro">
+    A heartfelt thank you to all the individuals who contributed to these publications!
+  </p>
+
+  {% for post in site.posts %}
+    {% assign is_pub = false %}
+    {% for cat in post.categories %}
+      {% if cat == 'publications' or cat == 'Poster' or cat == 'Paper' or cat == 'Workshop' %}
+        {% assign is_pub = true %}
+      {% endif %}
+    {% endfor %}
+    {% if is_pub %}
+      <div class="pub-item">
+        {% if post.image %}
+          <div class="pub-thumb">
+            <img src="{{ post.image | prepend: site.baseurl }}" alt="publication image" />
+          </div>
+        {% endif %}
+        <div class="pub-body">
+          <h3 class="pub-title">{{ post.title }}</h3>
+          <div class="pub-meta">
+            <em class="pub-cat">{{ post.categories }}</em><br/>
+            <em class="pub-authors">{{ post.authors }}</em><br/>
+            <em class="pub-venue">{{ post.venue }}, {{ post.date | date: "%Y-%m-%d" }}</em>
+          </div>
+          <div class="pub-links">
+            {% if post.pdf %}
+              <a href="{{ post.pdf }}" target="_blank">pdf</a>
+              {% if post.video %} · {% endif %}
+            {% endif %}
+            {% if post.video %}
+              <a href="{{ post.video }}" target="_blank">video</a>
+            {% endif %}
+          </div>
+          <div class="pub-excerpt">
+            {{ post.excerpt }}
+          </div>
+        </div>
+      </div>
+    {% endif %}
+  {% endfor %}
+</section>
+
+<section id="projects" class="section-block">
+  <h2>Projects</h2>
+  <p class="section-intro">
+    These include coursework, side projects, and unpublished research work.
+  </p>
+
+  {% for post in site.posts %}
+    {% assign is_proj = false %}
+    {% for cat in post.categories %}
+      {% if cat == 'Project' or cat == 'Report' %}
+        {% assign is_proj = true %}
+      {% endif %}
+    {% endfor %}
+    {% if is_proj %}
+      <div class="project-item">
+        {% if post.image %}
+          <div class="project-thumb">
+            <img src="{{ post.image | prepend: site.baseurl }}" alt="project image" />
+          </div>
+        {% endif %}
+        <div class="project-body">
+          <h3 class="project-title">{{ post.title }}</h3>
+          <div class="project-meta">
+            <em class="project-cat">{{ post.categories }}</em><br/>
+            <em class="project-authors">{{ post.authors }}</em><br/>
+            <em class="project-date">{{ post.date | date: "%Y-%m-%d" }}</em>
+          </div>
+          <div class="project-links">
+            {% if post.report %}
+              <a href="{{ post.report }}" target="_blank">report</a>
+            {% endif %}
+          </div>
+          <div class="project-excerpt">
+            {{ post.excerpt }}
+          </div>
+        </div>
+      </div>
+    {% endif %}
+  {% endfor %}
+</section>
+
+<section id="awards" class="section-block">
+  <h2>🏆 Awards 🏆</h2>
+  <ul class="award-list">
+    <li>
+      <a href="https://www.africa.engineering.cmu.edu/students/fellowships-awards.html" target="_blank">
+        Jeremiah N. Mpagazehe Rising Researcher Award for the class of 2023 at CMU-Africa
+      </a>
+    </li>
+    <li>
+      <a href="https://www.ieee-ras.org/women-in-engineering/idea-winners" target="_blank">
+        IEEE-RAS WiE IDEA Award
+      </a>
+    </li>
+  </ul>
+</section>
